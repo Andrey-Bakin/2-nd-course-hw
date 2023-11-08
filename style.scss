@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding-top: 217px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%),
+    url(img/background1.jpg), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1024px;
+  &__title {
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 32px;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    margin-bottom: 44px;
+  }
+
+  &__text-big {
+    font-weight: 700;
+  }
+
+  &__link {
+    font-family: "Montserrat", sans-serif;
+    width: 234.063px;
+    height: 48.603px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    background: #9c0332;
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 0.4s;
+  }
+  
+  &__link:hover {
+    border-radius: 30px;
+    background: #eb443f;
+  }
+}
+
+
+
+.menu {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background-image: url(img/background2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  gap: 32px;
+}
+
+.menu__item {
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+
+.item1 {
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+    url(img/Game1.jpg), lightgray 50% / cover no-repeat;
+}
+
+.item1:hover {
+  border-radius: 16px;
+  border: 3px solid #44d2ff;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+    url(img/Game1.jpg), lightgray 50% / cover no-repeat;
+}
+
+.item2 {
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+    url(img/Game2.jpg), lightgray 50% / cover no-repeat;
+}
+
+.item2:hover {
+  border-radius: 16px;
+  border: 3px solid #44d2ff;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+    url(img/Game2.jpg), lightgray 50% / cover no-repeat;
+}
+
+.item3 {
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+    url(img/Game3.jpg), lightgray 50% / cover no-repeat;
+}
+
+.item3:hover {
+  border-radius: 16px;
+  border: 3px solid #44d2ff;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
+    url(img/Game3.jpg), lightgray 50% / cover no-repeat;
+}
