@@ -1,0 +1,34 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        padding-top: 238px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%), url(img/backgroundMob1.jpg),lightgray 50% / cover no-repeat;
+        height: 735px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        &__text {
+            width: 343px;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        &__item {
+          width: 343px;
+        }
+    }
+}
