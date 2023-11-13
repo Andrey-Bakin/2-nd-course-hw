@@ -1,14 +1,16 @@
 // 1
-let a = 20;
+let a = 10;
+alert (a);
+a = 20;
 alert (a)
 
 // 2
-let year;
-alert (year = 'Год выпуска первого iPhone - 2007')
+const year = 'Год выпуска первого iPhone - 2007';
+alert (year)
 
 // 3
-let creator;
-alert (creator = 'Создатель языка JavaScript - Брендан Эйх')
+const creator = 'Создатель языка JavaScript - Брендан Эйх';
+alert (creator)
 
 // 4
 let x = 10;
@@ -20,7 +22,7 @@ alert (x / y);
 
 // 5
 let s = 2;
-alert (redult = s ** 5);
+alert (result = s ** 5);
 
 // 6
 let a1 = 9;
