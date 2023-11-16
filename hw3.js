@@ -34,3 +34,45 @@ let b = '3';
 alert (Number(a) + Number(b));
 
 // 5
+let monthNumber = prompt('Введите номер месяца')
+
+switch (monthNumber) {
+	case '1':
+		console.log('Январь - второй месяц зимы');
+		break;
+	case '2':
+		console.log('Февраль - третий месяц зимы');
+		break;
+    case '3':
+        console.log('Март - первый месяц весны');
+        break;
+    case '4':
+        console.log('Апрель - второй месяц весны');
+        break;
+    case '5':
+         console.log('Май - третий месяц весны');
+        break; 
+    case '6':
+        console.log('Июнь - первый месяц лета');
+        break;
+    case '7':
+        console.log('Июль - второй месяц лета');
+        break;
+    case '8':
+        console.log('Август - третий месяц лета');
+        break;
+    case '9':
+        onsole.log('Сентябрь - первый месяц осени');
+        break;
+    case '10':
+        console.log('Октябрь - второй месяц осени');
+        break;
+    case '11':
+        console.log('Ноябрь - третий месяц осени');
+        break;
+    case '12':
+        console.log('Декабрь - первый месяц зимы');
+        break;
+	default: console.log('номер месяца больше 12');
+		break;
+}
