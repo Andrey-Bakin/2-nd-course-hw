@@ -226,13 +226,32 @@ a {
   .menu__item {
     width: 343px;
   }
+  .game-box {
+    align-content: flex-start;
+    gap: 64px;
+    padding-top: 51px;
+    height: 653px;
+  }
+  .game-box__content {
+    align-items: center;
+  }
   .game-box__content-header {
     text-align: center;
     font-size: 32px;
   }
   .game-box__content-text {
+    width: 343px;
     text-align: center;
     font-family: Montserrat;
     font-size: 14px;
+  }
+  .game-box .game-box__image {
+    width: 344px;
+    height: 236px;
+  }
+  .game-box3 {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/game3-back.jpg) lightgray 50%/cover no-repeat;
+    height: 800px;
+    justify-content: start;
   }
 }/*# sourceMappingURL=style.css.map */

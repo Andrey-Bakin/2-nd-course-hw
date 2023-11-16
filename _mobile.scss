@@ -33,15 +33,35 @@
     }
 
     .game-box {
+        align-content: flex-start;
+        gap: 64px;
+        padding-top: 51px;
+        height: 653px;
+        &__content {
+            align-items: center;
+        }
+
         &__content-header {
             text-align: center;
             font-size: 32px;
         }
 
         &__content-text {
+            width: 343px;
             text-align: center;
             font-family: Montserrat;
             font-size: 14px;
         }
+
+        .game-box__image {
+            width: 344px;
+            height: 236px;
+        }
+    }
+
+    .game-box3 {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%), url(img/game3-back.jpg) lightgray 50% / cover no-repeat;
+        height: 800px;
+        justify-content: start;
     }
 }
