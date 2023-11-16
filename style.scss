@@ -5,6 +5,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  color: #FFF;
 }
 
 .center {
@@ -142,7 +143,35 @@ a {
 
 .game-box {
   height: 800px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  &__content {
+    width: 588px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
 
+  &__content-header {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__conyent-text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+  }
+
+  &__image {
+    width: 485px;
+    height: 333px;
+  }
 }
 
 .game-box1 {
@@ -160,9 +189,30 @@ a {
 }
 
 .game-box3 {
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  text-align: center;
   background: url(img/game-back3.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.footer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(img/footer-back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &-text {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 @import 'mobile'
