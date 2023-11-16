@@ -123,6 +123,31 @@ a {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game3.jpg), lightgray 50%/cover no-repeat;
 }
 
+.game-box {
+  height: 800px;
+}
+
+.game-box1 {
+  background: url(img/game-back1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.game-box2 {
+  background: url(img/game-back2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.game-box3 {
+  background: url(img/game-back3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;

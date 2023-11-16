@@ -140,4 +140,29 @@ a {
   }
 }
 
+.game-box {
+  height: 800px;
+
+}
+
+.game-box1 {
+  background: url(img/game-back1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.game-box2 {
+  background: url(img/game-back2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.game-box3 {
+  background: url(img/game-back3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 @import 'mobile'
