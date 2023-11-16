@@ -7,3 +7,14 @@ if (askPassword == 'пароль') {
 } else {
     console.log('Пароль введен неправильно');
 };
+
+// 2
+let c = prompt ('Введите число')
+
+if ((c > 0) && (c < 10)) {
+    console.log('Верно');
+} else {
+    console.log('Не верно');
+};
+
+// 3
