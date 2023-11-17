@@ -87,3 +87,20 @@ if (isNaN(x)) {
 }
 
 // 8
+let clientOS = 1; // или 0
+clientOS === 0 ? console.log(`Установите версию приложения для iOS по ссылке`) 
+: console.log(`Установите версию приложения для Android по ссылке`);
+
+// 9
+let deviceOS = 1; // или 0
+let clientDeviceYear = 2010;
+
+if ((deviceOS === 1) && (clientDeviceYear >= 2015)) {
+    console.log(`Установите версию приложения для Android по ссылке`);
+} else if ((deviceOS === 1) && (clientDeviceYear < 2015)) {
+    console.log(`Установите облегченную версию приложения для Android по ссылке`);
+} else if ((deviceOS === 0) && (clientDeviceYear >= 2015)) {
+    console.log(`Установите версию приложения для iOS по ссылке`);
+} else {
+    console.log(`Установите облегченную версию приложения для iOS по ссылке`);
+}
