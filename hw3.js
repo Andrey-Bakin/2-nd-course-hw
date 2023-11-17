@@ -73,6 +73,17 @@ switch (monthNumber) {
     case '12':
         console.log('Декабрь - первый месяц зимы');
         break;
-	default: console.log('номер месяца больше 12');
+	default: console.log('номер месяца больше 12, или введено неверное значение');
 		break;
 }
+// 7
+let x = Number(prompt('Пожалуйста, введите любое число'));
+if (isNaN(x)) {
+  alert('Нужно вписать число');
+} else if (x % 2 === 0) {
+  alert('Число четное'); 
+} else {
+  alert('Число нечетное'); 
+}
+
+// 8
