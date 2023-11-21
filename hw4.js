@@ -36,3 +36,8 @@ while (n >= 50) {
 console.log (n);
 console.log (num);
 
+// 6
+let firstFriday = 1;
+for (let i = firstFriday; i <= 31; i += 7) {
+    console.log (`Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.`)
+}
