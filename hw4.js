@@ -8,3 +8,8 @@ for (let i = 1; i <= 5; i++) {
     console.log (i);
 }
 
+// 3
+for (let a = 7; a <= 22; a++) {
+    console.log (a);
+}
+
