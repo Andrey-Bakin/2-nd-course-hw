@@ -1,52 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <script src="hw2.js"></script> -->
     <!-- <script src="hw3.js"></script> -->
     <script src="hw4.js"></script>
     <title>Главная страница</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header center">
-        <h1 class="header__title">Добро пожаловать<br>на мой сайт !</h1>
-        <p class="header__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="header__text-big">поехали</span> и <span class="header__text-big">приступай</span></p>
-        <a class="header__link" href="#game">Поехали!</a>
+      <h1 class="header__title">Добро пожаловать<br />на мой сайт !</h1>
+      <p class="header__text">
+        Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+        <span class="header__text-big">поехали</span> и
+        <span class="header__text-big">приступай</span>
+      </p>
+      <a class="header__link" href="#game">Поехали!</a>
     </header>
-    <div id="game"class="menu center">
-        <a href="#game1" class="menu__item menu__item1">Игра 1</a>
-        <a href="#game2" class="menu__item menu__item2">Игра 2</a>
-        <a href="#game3" class="menu__item menu__item3">Игра 3</a>
+    <div id="game" class="menu center">
+      <a href="#game1" class="menu__item menu__item1">Игра 1</a>
+      <a href="#game2" class="menu__item menu__item2">Игра 2</a>
+      <a href="#game3" class="menu__item menu__item3">Игра 3</a>
     </div>
     <div id="game1" class="game-box game-box1 center">
-        <div class="game-box__content">
-            <h2 class="game-box__content-header">Времена года</h2>
-            <p class="game-box__content-text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-            <a class="header__link" href="#">Играть!</a>
-        </div>
-        <img class="game-box__image" src="img/game-cont1.png" alt="game-picture">
+      <div class="game-box__content">
+        <h2 class="game-box__content-header">Времена года</h2>
+        <p class="game-box__content-text">
+          Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете
+          к какому времени года он относится
+        </p>
+        <a class="header__link" href="#">Играть!</a>
+      </div>
+      <img
+        class="game-box__image"
+        src="img/game-cont1.png"
+        alt="game-picture"
+      />
     </div>
     <div id="game2" class="game-box game-box2 center">
-        <img class="game-box__image" src="img/game-cont2.png" alt="game-picture">
-        <div class="game-box__content">
-            <h2 class="game-box__content-header">Запомни слова</h2>
-            <p class="game-box__content-text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
-            <a class="header__link" href="#">Играть!</a>
-        </div>
+      <img
+        class="game-box__image"
+        src="img/game-cont2.png"
+        alt="game-picture"
+      />
+      <div class="game-box__content">
+        <h2 class="game-box__content-header">Запомни слова</h2>
+        <p class="game-box__content-text">
+          При нажатии на кнопку играть, вы увидите несколько слов, которые вам
+          необходимо запомнить.
+        </p>
+        <a class="header__link" href="#">Играть!</a>
+      </div>
     </div>
     <div id="game3" class="game-box game-box3 center">
-        <h2 class="game-box__content-header">Игра в загадки</h2>
-        <p class="game-box__content-text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
-        <a class="header__link" href="#">Играть!</a>
+      <h2 class="game-box__content-header">Игра в загадки</h2>
+      <p class="game-box__content-text">
+        Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите
+        не правильный ответ, то компьютер даст вам подсказку. У вас будет три
+        попытки и две подсказки.
+      </p>
+      <a class="header__link" href="#">Играть!</a>
     </div>
     <footer class="footer center">
-        <p class="footer-text">Все права защищены</p>
+      <p class="footer-text">Все права защищены</p>
     </footer>
-    
-</body>
+  </body>
 </html>
