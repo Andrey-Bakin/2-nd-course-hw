@@ -19,13 +19,38 @@ function number(n) {
   }
 }
 
-console.log(number(8))
-console.log(number(3))
+console.log(number(prompt(`Пожалуйста введите число`)))
 
 // 3
 function num(x) {
   return x * x;
 }
 
-console.log(num(10))
+console.log(num(prompt(`Пожалуйста введите число`)))
+
+// 4
+let age = prompt("Сколько Вам лет?", 12);
+
+let printMessage;
+
+if (age < 0) {
+
+    printMessage = function () {
+        console.log("Вы ввели неправильное значение");
+    }
+
+} else if (age <= 12) {
+    
+    printMessage = function () {
+        console.log("Привет, друг!");
+    }
+} else {
+
+    printMessage = function () {
+        console.log("Добро пожаловать!");
+    }
+
+} 
+
+printMessage();
 
