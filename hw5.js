@@ -7,8 +7,8 @@ function num(a, b) {
     }
   }
 
-console.log(num(8, 4))
-console.log(num(6, 6))
+console.log(num(8, 4));
+console.log(num(6, 6));
 
 // 2
 function number(n) {
@@ -21,4 +21,11 @@ function number(n) {
 
 console.log(number(8))
 console.log(number(3))
+
+// 3
+function num(x) {
+  return x * x;
+}
+
+console.log(num(10))
 
