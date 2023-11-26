@@ -1,5 +1,5 @@
 // 1
-function num(a, b) {
+function getMin(a, b) {
   if (a < b) {
     return a;
 
@@ -8,8 +8,8 @@ function num(a, b) {
   }
 }
 
-console.log(num(8, 4));
-console.log(num(6, 6));
+getMin(8, 4);
+getMin(6, 6);
 
 // 2
 function number(n) {
@@ -23,35 +23,39 @@ function number(n) {
 
 console.log(number(prompt(`Пожалуйста введите число`)));
 
-// 3
-function num(x) {
-  return x * x;
+// 3.1
+function printSquare(num) {
+  console.log(num ** 2);
 }
 
-console.log(num(prompt(`Пожалуйста введите число`)));
+printSquare(6)
+
+// 3.2
+function getSquare (num) {
+  return num ** 2;
+}
+
+console.log (getSquare(6))
 
 // 4
-let age = prompt("Сколько Вам лет?", 12);
-let printMessage;
+let userAge = prompt("Сколько Вам лет?");
+
+function greetUser(age) {
 
 if (age < 0) {
-  printMessage = function () {
     console.log("Вы ввели неправильное значение");
   }
 
-  } else if (age <= 12) {
-  printMessage = function () {
+  else if (age <= 12) {
     console.log("Привет, друг!");
   }
 
-  } else {
-  printMessage = function () {
+  else {
     console.log("Добро пожаловать!");
-
   }
 }
 
-printMessage();
+greetUser(userAge);
 
 // 5
 let a = prompt(`Введите первое число`);
@@ -64,7 +68,21 @@ function examNumber(a, b) {
   } else {
     return a * b;
   }
-  
+
 }
 
 console.log(examNumber(a, b));
+
+// 6
+function cubeNumber() {
+  let num = prompt("Введите число:")
+  if(isNaN(Number(num))) {
+    return "Введенный переметр не является числом";
+  } else {
+    return `${num} в кубе равняется ${num ** 3}`
+  }
+}
+
+console.log(cubeNumber());
+
+// 7
