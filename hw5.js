@@ -86,11 +86,11 @@ function cubeNumber() {
 console.log(cubeNumber());
 
 // 7
-function getArea {
+function getArea () {
   return Math.PI * this.radius ** 2;
 }
 
-function getPerimetr {
+function getPerimetr () {
   return 2 * Math.PI * this.radius;
 }
 
@@ -112,3 +112,18 @@ circle1.getPerimetr();
 circle2.getPerimetr();
 
 // 8
+function getSeason (month) {
+  if (month == 12 || month == 1 || month == 2) {
+    return "Зима";
+  } else if (month <= 3 && month <= 5) {
+    return "Весна";
+  } else if ((month <= 6 && month <= 8)) {
+    return "Лето";
+  } else if (month <= 9 && month <= 11) {
+    return "Осень";
+  } else {
+    return "Неправильный номер месяца!"
+  }
+}
+
+console.log(getSeason(prompt("Введите номер месяца")))
