@@ -86,3 +86,29 @@ function cubeNumber() {
 console.log(cubeNumber());
 
 // 7
+function getArea {
+  return Math.PI * this.radius ** 2;
+}
+
+function getPerimetr {
+  return 2 * Math.PI * this.radius;
+}
+
+const circle1 = {
+  radius: 5,
+  getArea,
+  getPerimetr,
+};
+
+const circle2 = {
+  radius: 10,
+  getArea,
+  getPerimetr,
+};
+
+circle1.getArea();
+circle2.getArea();
+circle1.getPerimetr();
+circle2.getPerimetr();
+
+// 8
