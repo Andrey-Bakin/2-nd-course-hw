@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <script src="hw2.js"></script> -->
-    <!-- <script src="hw3.js"></script> -->
-    <!-- <script src="hw4.js"></script> -->
-    <script src="hw5.js"></script>
     <title>Главная страница</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,7 +34,12 @@
           Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете
           к какому времени года он относится
         </p>
-        <a class="header__link" href="#">Играть!</a>
+        <a
+          onclick="alert(getSeason(prompt('Введите номер месяца')))"
+          class="header__link"
+          href="#"
+          >Играть!</a
+        >
       </div>
       <img
         class="game-box__image"
@@ -73,5 +74,9 @@
     <footer class="footer center">
       <p class="footer-text">Все права защищены</p>
     </footer>
+    <!-- <script src="hw2.js"></script> -->
+    <!-- <script src="hw3.js"></script> -->
+    <!-- <script src="hw4.js"></script> -->
+    <script src="hw5.js"></script>
   </body>
 </html>

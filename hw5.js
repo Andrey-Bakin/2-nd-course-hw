@@ -122,8 +122,8 @@ function getSeason (month) {
   } else if (month <= 9 && month <= 11) {
     return "Осень";
   } else {
-    return "Неправильный номер месяца!"
+    return "Введен неверный параметр!";
   }
 }
 
-console.log(getSeason(prompt("Введите номер месяца")))
+alert(getSeason(prompt("Введите номер месяца")))
