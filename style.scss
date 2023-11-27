@@ -101,39 +101,39 @@ a {
     padding-bottom: 32px;
   }
   
-  &__item1 {
+  &__item:first-child {
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
       url(img/Game1.jpg), lightgray 50% / cover no-repeat;
   }
   
-  &__item1:hover {
+  &__item:first-child:hover {
     border-radius: 16px;
     border: 3px solid #44d2ff;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
       url(img/Game1.jpg), lightgray 50% / cover no-repeat;
   }
   
-  &__item2 {
+  &__item:nth-child(2) {
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
       url(img/Game2.jpg), lightgray 50% / cover no-repeat;
   }
   
-  &__item2:hover {
+  &__item:nth-child(2):hover {
     border-radius: 16px;
     border: 3px solid #44d2ff;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
       url(img/Game2.jpg), lightgray 50% / cover no-repeat;
   }
   
-  &__item3 {
+  &__item:last-child {
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
       url(img/Game3.jpg), lightgray 50% / cover no-repeat;
   }
   
-  &__item3:hover {
+  &__item:last-child:hover {
     border-radius: 16px;
     border: 3px solid #44d2ff;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
