@@ -12,3 +12,9 @@ const numbs = [1, 5, 4, 10, 0, 3];
 numbs.forEach((el, index) => {
 	console.log(`${index}: ${el}`);
 });
+
+// 3
+const numbs = [1, 3, 5, 10, 20];
+numbs.join(' ');
+
+// 4
