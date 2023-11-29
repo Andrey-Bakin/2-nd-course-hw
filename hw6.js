@@ -87,3 +87,15 @@ function getLengthWords(words) {
 getLengthWords = (["слово", "", "слог", "длинное предложение", "буква"]);
 
 // 13
+function filterPositive(arr) {
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 0) {
+            result.push(arr[i]);
+        }
+    }
+    return result;
+}
+
+filterPositive([-1, 0, 5, -10, 56]); 
+filterPositive([-25, 25, 0, -1000, -2]); 
