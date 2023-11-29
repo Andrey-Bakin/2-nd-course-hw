@@ -66,3 +66,9 @@ const arr = doubleArr.flat();
 console.log(arr);
 
 // 10
+const numbs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < numbs.length - 1; i++) {
+    console.log(numbs[i] + numbs[i + 1]);
+};
+
+// 11
