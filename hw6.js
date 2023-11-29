@@ -19,9 +19,14 @@ numbs.join(' ');
 
 // 4
 const catalog [
-    [1, 1, 1], 
-    [1, 1, 1], 
+    [1, 1, 1],
+    [1, 1, 1],
     [1, 1, 1]
 ]
 
 // 5
+let products = [1, 1, 1];
+products.push(2, 2, 2);
+console.log(products); 
+
+// 6
