@@ -18,7 +18,7 @@ const numbs = [1, 3, 5, 10, 20];
 numbs.join(' ');
 
 // 4
-const catalog [
+const catalog = [
     [1, 1, 1],
     [1, 1, 1],
     [1, 1, 1]
@@ -30,3 +30,10 @@ products.push(2, 2, 2);
 console.log(products); 
 
 // 6
+const catalog = [9, 8, 7, 'a', 6, 5];
+const result = catalog.sort();
+result.pop();
+result.reverse();
+console.log(result);
+
+// 7
