@@ -45,7 +45,7 @@ console.log(result);
 
 // 7
 const numbs = [9, 8, 7, 6, 5];
-const guessNumber = Number(prompt('Введите пожалуйста число'), 10);
+const guessNumber = Number(prompt('Введите пожалуйста число'));
 if (numbs.includes(guessNumber)) {
     alert("Угадал");
 } else {
@@ -53,3 +53,8 @@ if (numbs.includes(guessNumber)) {
 }
 
 // 8
+const letters = "abcdef";
+const unletters = letters.split("").reverse().join("");
+console.log(unletters);
+
+// 9
