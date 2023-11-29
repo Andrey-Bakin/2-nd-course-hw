@@ -58,3 +58,11 @@ const unletters = letters.split("").reverse().join("");
 console.log(unletters);
 
 // 9
+const doubleArr = [
+    [1, 2, 3,],
+    [4, 5, 6]
+];
+const arr = doubleArr.flat();
+console.log(arr);
+
+// 10
