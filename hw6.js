@@ -59,7 +59,7 @@ console.log(unletters);
 
 // 9
 const doubleArr = [
-    [1, 2, 3,],
+    [1, 2, 3],
     [4, 5, 6]
 ];
 const arr = doubleArr.flat();
@@ -72,3 +72,11 @@ for (let i = 0; i < numbs.length - 1; i++) {
 };
 
 // 11
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function sqaredNumbs(arr) {
+    return arr.map((num) => num * num);
+}
+
+sqaredNumbs(arr);
+
+// 12
