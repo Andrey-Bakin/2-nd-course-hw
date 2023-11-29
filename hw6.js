@@ -2,8 +2,10 @@
 const numbs = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < numbs.length; i++) {
-    if (numbs[i] === 10) break;
     console.log(numbs[i]);
+    if (numbs[i] === 10) {
+      break;
+    } 
 }
 
 // 2
@@ -15,19 +17,24 @@ numbs.forEach((el, index) => {
 
 // 3
 const numbs = [1, 3, 5, 10, 20];
-numbs.join(' ');
+const str = numbs.join(' ');
+console.log(str);
 
 // 4
-const catalog = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1]
-]
+let arr = [];
+for (let i = 0; i < 3; i++){
+    let inArr = [];
+    for (let x = 0; x < 3; x++) {
+        inArr.push(1);
+    }
+    arr.push(inArr);
+}
+console.log(arr)
 
 // 5
-let products = [1, 1, 1];
+let arr = [1, 1, 1];
 products.push(2, 2, 2);
-console.log(products); 
+console.log(arr); 
 
 // 6
 const catalog = [9, 8, 7, 'a', 6, 5];
@@ -37,3 +44,10 @@ result.reverse();
 console.log(result);
 
 // 7
+const numbs = [9, 8, 7, 6, 5];
+const guessNumber = Numbser(prompt('Введите пожалуйста число'), 10);
+if (numbs.includes(guessNumber)) {
+    alert('Угадал');
+} else {
+    alert('Не угадал');
+}
