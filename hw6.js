@@ -45,9 +45,11 @@ console.log(result);
 
 // 7
 const numbs = [9, 8, 7, 6, 5];
-const guessNumber = Numbser(prompt('Введите пожалуйста число'), 10);
+const guessNumber = Number(prompt('Введите пожалуйста число'), 10);
 if (numbs.includes(guessNumber)) {
-    alert('Угадал');
+    alert("Угадал");
 } else {
-    alert('Не угадал');
+    alert("Не угадал");
 }
+
+// 8
