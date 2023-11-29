@@ -80,3 +80,10 @@ function sqaredNumbs(arr) {
 sqaredNumbs(arr);
 
 // 12
+function getLengthWords(words) {
+    return words.map((word) => word.length);
+}
+
+getLengthWords = (["слово", "", "слог", "длинное предложение", "буква"]);
+
+// 13
