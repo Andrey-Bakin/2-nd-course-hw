@@ -96,29 +96,29 @@ a {
   padding-left: 32px;
   padding-bottom: 32px;
 }
-.menu__item1 {
+.menu__item:first-child {
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game1.jpg), lightgray 50%/cover no-repeat;
 }
-.menu__item1:hover {
+.menu__item:first-child:hover {
   border-radius: 16px;
   border: 3px solid #44d2ff;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game1.jpg), lightgray 50%/cover no-repeat;
 }
-.menu__item2 {
+.menu__item:nth-child(2) {
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game2.jpg), lightgray 50%/cover no-repeat;
 }
-.menu__item2:hover {
+.menu__item:nth-child(2):hover {
   border-radius: 16px;
   border: 3px solid #44d2ff;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game2.jpg), lightgray 50%/cover no-repeat;
 }
-.menu__item3 {
+.menu__item:last-child {
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game3.jpg), lightgray 50%/cover no-repeat;
 }
-.menu__item3:hover {
+.menu__item:last-child:hover {
   border-radius: 16px;
   border: 3px solid #44d2ff;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game3.jpg), lightgray 50%/cover no-repeat;
