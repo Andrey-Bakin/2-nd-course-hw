@@ -11,9 +11,8 @@ for (let i = 0; i < numbs.length; i++) {
 // 2
 const numbs = [1, 5, 4, 10, 0, 3];
 
-numbs.forEach((el, index) => {
-	console.log(`${index}: ${el}`);
-});
+numbs.indexOf();
+console.log(4);
 
 // 3
 const numbs = [1, 3, 5, 10, 20];
