@@ -143,4 +143,4 @@ if (firstEl === gameFruits[0] && lastEl === gameFruits[gameFruits.length - 1]) {
   alert("Вы были близки к победе!");
 } else {
   alert("Вы не угадали ниодного элемента.");
-};
+}
