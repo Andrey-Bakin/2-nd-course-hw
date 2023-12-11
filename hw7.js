@@ -1,25 +1,41 @@
+// Задание 8 - hw5 (Игра № 1)
+function getSeason(month) {
+  if (month == 12 || month == 1 || month == 2) {
+    return "Зима";
+  } else if (month >= 3 && month <= 5) {
+    return "Весна";
+  } else if (month >= 6 && month <= 8) {
+    return "Лето";
+  } else if (month >= 9 && month <= 11) {
+    return "Осень";
+  } else {
+    return "Введен неверный параметр!";
+  }
+}
+
+alert(getSeason(prompt("Введите номер месяца")));
+
 // Задание № 1
-let str = 'js'; 
+let str = "js";
 console.log(str.toUpperCase());
 
 // Задание № 2
 function searchStart(arr, str) {
+  const filteredArr = [];
 
-    const filteredArr = [];
+  arr.forEach((el) => {
+    if (el.toLowerCase().startsWith(str)) {
+      filteredArr.push(el);
+    }
+  });
 
-    arr.forEach((el) => {
-        if (el.toLowerCase().startsWith(str)) {
-            filteredArr.push(el);
-        }
-    });
-
-    return filteredArr;
+  return filteredArr;
 }
 
-console.log(searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко'));
+console.log(searchStart(["Кошка", "Кит", "Комар", "Носорог"], "ко"));
 
 // Задание № 3
-let num = 32.58884
+let num = 32.58884;
 console.log(Math.floor(num));
 console.log(Math.ceil(num));
 console.log(Math.round(num));
@@ -32,55 +48,86 @@ console.log(Math.max(...numbs));
 
 // Задание № 5
 function getRandomInt(minValue, maxValue) {
-    return Math.round(Math.random() * maxValue);
-    }                                
-    
-    console.log(getRandomInt(1, 10));
+  return Math.round(Math.random() * maxValue);
+}
+
+console.log(getRandomInt(1, 10));
 
 // Задание № 6
 function getRandomArrNumbers(n) {
-    const arr = [];
-    let i = n / 2;
-    i = Math.floor(i);
-    for (let index = 0; index < i; index++) {
-        arr.push(Math.round(Math.random() * n))
-    };
-    return arr
+  const arr = [];
+  let i = n / 2;
+  i = Math.floor(i);
+  for (let index = 0; index < i; index++) {
+    arr.push(Math.round(Math.random() * n));
+  }
+  return arr;
 }
 
-getRandomArrNumbers(7)
+getRandomArrNumbers(7);
 
 // Задание № 7
-function numbs (a, b) {
-    return Math.round(Math.random() * b);
-}                                
+function getRound(a, b) {
+  return Math.round(Math.random() * b);
+}
 
-console.log(numbs(3, 9));
+console.log(getRound(3, 9));
 
 // Задание № 8
 let currentDate = new Date();
 console.log(currentDate);
 
 // Задание № 9
-let currentDate = new Date();
+let myDate = new Date();
 currentDate.setDate(currentDate.getDate() + 73);
 
-console.log(currentDate);
+console.log(myDate);
 
 // Задание № 10
-function fullDate (date) {
-    const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+function fullDate(date) {
+  const days = [
+    "Воскресенье",
+    "Понедельник",
+    "Вторник",
+    "Среда",
+    "Четверг",
+    "Пятница",
+    "Суббота",
+  ];
 
-    const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+  const months = [
+    "Январь",
+    "Февраль",
+    "Март",
+    "Апрель",
+    "Май",
+    "Июнь",
+    "Июль",
+    "Август",
+    "Сентябрь",
+    "Октябрь",
+    "Ноябрь",
+    "Декабрь",
+  ];
 
-    return `Дата: ${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()} - это ${days[date.getDay()]}\nВремя: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
-
+  return `Дата: ${date.getDate()} ${
+    months[date.getMonth()]
+  } ${date.getFullYear()} - это ${
+    days[date.getDay()]
+  }\nВремя: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
 }
-console.log(fullDate(new Date));
+console.log(fullDate(new Date()));
 
-// Задание № 11
-let gameFruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин']
+// Задание № 11 (Игра № 2)
+let gameFruits = [
+  "Яблоко",
+  "Груша",
+  "Дыня",
+  "Виноград",
+  "Персик",
+  "Апельсин",
+  "Мандарин",
+];
 gameFruits = gameFruits.sort(() => Math.random() - 0.5);
 alert(gameFruits);
 
@@ -88,32 +135,12 @@ let firstEl = prompt("Чему равнялся первый элемент ма
 let lastEl = prompt("Чему равнялся последний элемент массива?");
 
 if (firstEl === gameFruits[0] && lastEl === gameFruits[gameFruits.length - 1]) {
-    alert("Поздравляем! Вы угадали оба элемента");
-}
-
-else if (firstEl === gameFruits[0] || lastEl === gameFruits[gameFruits.length - 1]) {
-    alert("Вы были близки к победе!");    
-}
-
-else {
-    alert("Вы не угадали ниодного элемента.");
-}
-
-
-// 8 hw5 (Игра № 1)
-function getSeason (month) {
-    if (month == 12 || month == 1 || month == 2) {
-      return "Зима";
-    } else if (month <= 3 && month <= 5) {
-      return "Весна";
-    } else if ((month <= 6 && month <= 8)) {
-      return "Лето";
-    } else if (month <= 9 && month <= 11) {
-      return "Осень";
-    } else {
-      return "Введен неверный параметр!";
-    }
-  }
-  
-  alert(getSeason(prompt("Введите номер месяца")))
-
+  alert("Поздравляем! Вы угадали оба элемента");
+} else if (
+  firstEl === gameFruits[0] ||
+  lastEl === gameFruits[gameFruits.length - 1]
+) {
+  alert("Вы были близки к победе!");
+} else {
+  alert("Вы не угадали ниодного элемента.");
+};
