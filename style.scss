@@ -101,13 +101,13 @@ a {
     padding-bottom: 32px;
   }
   
-  &__item:first-child {
+  &__item:nth-child(1) {
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
       url(img/Game1.jpg), lightgray 50% / cover no-repeat;
   }
   
-  &__item:first-child:hover {
+  &__item:nth-child(1):hover {
     border-radius: 16px;
     border: 3px solid #44d2ff;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
@@ -127,13 +127,13 @@ a {
       url(img/Game2.jpg), lightgray 50% / cover no-repeat;
   }
   
-  &__item:last-child {
+  &__item:nth-child(3) {
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),
       url(img/Game3.jpg), lightgray 50% / cover no-repeat;
   }
   
-  &__item:last-child:hover {
+  &__item:nth-child(3):hover {
     border-radius: 16px;
     border: 3px solid #44d2ff;
     background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%),

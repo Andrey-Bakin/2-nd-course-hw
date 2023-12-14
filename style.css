@@ -96,11 +96,11 @@ a {
   padding-left: 32px;
   padding-bottom: 32px;
 }
-.menu__item:first-child {
+.menu__item:nth-child(1) {
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game1.jpg), lightgray 50%/cover no-repeat;
 }
-.menu__item:first-child:hover {
+.menu__item:nth-child(1):hover {
   border-radius: 16px;
   border: 3px solid #44d2ff;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game1.jpg), lightgray 50%/cover no-repeat;
@@ -114,11 +114,11 @@ a {
   border: 3px solid #44d2ff;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game2.jpg), lightgray 50%/cover no-repeat;
 }
-.menu__item:last-child {
+.menu__item:nth-child(3) {
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game3.jpg), lightgray 50%/cover no-repeat;
 }
-.menu__item:last-child:hover {
+.menu__item:nth-child(3):hover {
   border-radius: 16px;
   border: 3px solid #44d2ff;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(img/Game3.jpg), lightgray 50%/cover no-repeat;
